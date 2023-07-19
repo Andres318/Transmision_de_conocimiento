@@ -36,11 +36,17 @@
 
   <TabView androidTabsPosition="top" class="tabView" class="ActionBar">
     <GridLayout (tap)="buttonPub()" *tabItem="{ title: 'Publicaciones', iconSource: 'res://ic_28' }">
-      <page-router-outlet></page-router-outlet>
+      <GridLayout class="page__content">
+        <Label class="page__content-icon fas" text="&#xf1fe;"></Label>
+        <Label class="page__content-placeholder" text="Tus Publicaciones"></Label>
+      </GridLayout>
     </GridLayout>
 
     <GridLayout *tabItem="{ title: 'Eventos', iconSource: 'res://ic_29' }">
-      <page-router-outlet></page-router-outlet>
+      <GridLayout class="page__content">
+        <Label class="page__content-icon fas" text="&#xf133;"></Label>
+        <Label class="page__content-placeholder" text="Tus Eventos Programados"></Label>
+      </GridLayout>
     </GridLayout>
   </TabView>
 </StackLayout>

@@ -17,14 +17,4 @@ export class SearchComponent {
     );
   }
 
-  onBackTap(): void {
-    this._routerExtensions.back()
-  }
-
-  onNextTap(){
-    console.log("next")
-  }
-  
-
-
 }
