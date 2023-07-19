@@ -7,6 +7,10 @@ import { BucaramangaTabComponent } from "./bucaramangaTab/bucaramangaTab.compone
 import { SocorroTabComponent } from "./socorroTab/socorroTab.component";
 import { SangilTabComponent } from "./sangilTab/sangilTab.component";
 import { VelezTabComponent } from "./velezTab/velezTab.component";
+import { TurismoTabComponent } from "./turismoTab/turismoTab.component";
+import { GastronomiaTabComponent } from "./gastronomiaTab/gastronomiaTab.component";
+import { ArtesaniaTabComponent } from "./artesaniaTab/artesaniaTab.component";
+import { ArqueologiaTabComponent } from "./arqueologiaTab/arqueologiaTab.component";
 
 @NgModule({
   imports: [NativeScriptCommonModule, BrowseRoutingModule],
@@ -15,7 +19,11 @@ import { VelezTabComponent } from "./velezTab/velezTab.component";
     BucaramangaTabComponent,
     SocorroTabComponent,
     SangilTabComponent,
-    VelezTabComponent
+    VelezTabComponent,
+    TurismoTabComponent,
+    GastronomiaTabComponent,
+    ArtesaniaTabComponent,
+    ArqueologiaTabComponent,
   ],
   schemas: [NO_ERRORS_SCHEMA],
 })

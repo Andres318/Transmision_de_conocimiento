@@ -40,7 +40,7 @@ export class BrowseComponent extends Observable {
     Menu.popup({
       view: this.page.getViewById("menuBtn2"),
       actions: [
-        { id: "one", title: "Cultura" },
+        { id: "one", title: "Artesania" },
         { id: "two", title: "Turismo" },
         { id: "three", title: "Gastronomia" },
         { id: "four", title: "Arqueologia" },

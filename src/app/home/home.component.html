@@ -7,10 +7,10 @@
     <ng-template let-item="item">
       <StackLayout [nsRouterLink]="['../item', item.id]">
         <GridLayout
-          height="350"
-          rows="*, auto, auto"
+          height="auto"
+          rows="auto, auto, auto, auto, auto"
           columns="*"
-          class="bg-secondary" 
+          class="bg-secondary"
           borderRadius="10"
           margin="5 10"
           padding="0"
@@ -41,35 +41,49 @@
             [src]="item.photo"
           ></Image>
 
+          <GridLayout
+            row="3"
+            rows="*"
+            columns="auto, auto, auto, auto, *"
+            backgroundColor="#A68A73"
+          >
+            <!-- <Label
+              col="0"
+              margin="0"
+              fontSize="14"
+              iconRes="res://ic_9"
+            ></Label> -->
+
+            <Image col="0" src="res://ic_9"></Image>
+
+            <Label
+              col="1"
+              margin="0"
+              class="text-reaction"
+              fontSize="14"
+              [text]="item.reactions"
+            ></Label>
+
+            <Image col="2" src="res://ic_10" ></Image>
+
+            <Label
+              col="3"
+              margin="0"
+              class="text-comment"
+              fontSize="14"
+              [text]="item.comments"
+            ></Label>
+          </GridLayout>
         </GridLayout>
-
-        <!-- <StackLayout [nsRouterLink]="['../item', item.id]">
-        <Label [text]="item.name"></Label> -->
-        <!-- <mat-card class="example-card">
-          <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>{{item.name}} hola</mat-card-title>
-            <mat-card-subtitle>{{item.name}}</mat-card-subtitle>
-          </mat-card-header>
-          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-            alt="Photo of a Shiba Inu">
-          <mat-card-content>
-            <p>
-              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-              bred for hunting. <StackLayout orientation="horizontal">
-
-              </StackLayout>
-            </p>
-          </mat-card-content>
-          <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-          </mat-card-actions>
-        </mat-card> -->
-
-        <!-- </StackLayout> -->
       </StackLayout>
     </ng-template>
   </ListView>
+
+  <Button
+  text="+"
+  id="addButton"
+  class="float-button"
+  (tap)="handleButtonClick()"
+></Button>
+
 </GridLayout>
