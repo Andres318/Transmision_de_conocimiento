@@ -1,10 +1,38 @@
-<div class="bucaramangaTab"> Hello BucaramangaTabComponent! </div>
-
-
-<GridLayout columns="50, auto, *" rows="50, auto, *" width="210" height="210" backgroundColor="lightgray" >
-  <Label class="button-custom" text="Label 1" row="0" col="0" backgroundColor="red"></Label>
-  <Label text="bucaramangaTab 2" row="0" col="1" colSpan="2" backgroundColor="green"></Label>
-  <Label text="bucaramangaTab 3" row="1" col="0" rowSpan="2" backgroundColor="blue"></Label>
-  <Label text="bucaramangaTab 4" row="1" col="1" backgroundColor="yellow"></Label>
-  <Label text="bucaramangaTab 5" row="1" col="2" backgroundColor="orange"></Label>
-</GridLayout>
+<StackLayout padding="70">
+  <DockLayout
+    class="fab-container"
+    (tap)="onFabTap()"
+    horizontalAlignment="left"
+  >
+    <Label
+      class="fab-icon"
+      text="+"
+      iconSource="res://ic_frame_2"
+      color="white"
+    ></Label>
+  </DockLayout>
+  <DockLayout
+    class="fab-container"
+    (tap)="onFabTap()"
+    horizontalAlignment="center"
+  >
+    <Label
+      class="fab-icon"
+      text="+"
+      iconSource="res://ic_frame_2"
+      color="white"
+    ></Label>
+  </DockLayout>
+  <DockLayout
+    class="fab-container"
+    (tap)="onFabTap()"
+    horizontalAlignment="right"
+  >
+    <Label
+      class="fab-icon"
+      text="+"
+      iconSource="res://ic_frame_2"
+      color="white"
+    ></Label>
+  </DockLayout>
+</StackLayout>

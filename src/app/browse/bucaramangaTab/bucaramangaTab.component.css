@@ -1,3 +1,17 @@
-.bucaramangaTab {
+.fab-container {
+    position: absolute;
+    bottom: 50; /* Ajusta la posición vertical según tus necesidades */
+    right: 80; /* Ajusta la posición horizontal según tus necesidades */
+    width: 56;
+    height: 56;
+    border-radius: 28;
+    background-color: #ff4081; /* Color de fondo del botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto de elevación */
+}
 
+.fab-icon {
+    font-size: 24;
+    vertical-align: center !important;
+    text-align: center !important;
+    line-height: 56px; /* Centra verticalmente el ícono */
 }
