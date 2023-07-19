@@ -4,7 +4,7 @@ import { Menu } from "nativescript-menu";
 import { Page } from "tns-core-modules";
 
 @Component({
-  selector: "velezTab",
+  selector: "velezTab", 
   templateUrl: "velezTab.component.html",
   styleUrls: ["./velezTab.component.css"],
 })

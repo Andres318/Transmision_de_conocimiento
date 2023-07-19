@@ -9,6 +9,14 @@ import { NuevaPublicacionStepper } from "./shared/nuevaPublicacionStepper.model"
 export class NuevaPublicacionStepperComponent implements OnInit {
   nuevaPublicacionStepper: NuevaPublicacionStepper[] = [];
 
+  onBackTap(): void {
+    console.log("back")
+  }
+
+  onNextTap(){
+    console.log("next")
+  }
+
   constructor() {}
 
   ngOnInit() {}

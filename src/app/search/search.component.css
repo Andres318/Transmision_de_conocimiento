@@ -1,0 +1,12 @@
+.grid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .buttonNext{
+    background-color: #CA5116;
+    color: white;
+    align-content: end;
+    width: 500px;
+  }
