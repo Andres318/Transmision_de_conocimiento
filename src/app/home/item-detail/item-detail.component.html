@@ -1,8 +1,76 @@
 <ActionBar>
   <NavigationButton (tap)="onBackTap()" android.systemIcon="ic_menu_back"></NavigationButton>
-  <Label [text]="item.name"></Label>
+  <Label text="Publicacion"></Label>
 </ActionBar>
 
-<GridLayout>
-  <Label class="m-10 h3" verticalAlignment="top" [text]="item.description"></Label>
+<StackLayout>
+  <GridLayout
+  height="auto"
+  rows="auto, auto, auto, auto, auto"
+  columns="*"
+  class="bg-secondary"
+  borderRadius="10"
+  margin="5 10"
+  padding="0"
+>
+  <Label
+    row="0"
+    margin="0"
+    fontWeight="700"
+    class="text-primary"
+    fontSize="18"
+    color="rgb(202, 81, 22)"
+    [text]="item.name"
+  ></Label>
+
+  <Label
+    row="1"
+    margin="0 10 10 10"
+    class="text-secondary"
+    fontSize="14"
+    textWrap="true"
+    [text]="item.description"
+  ></Label>
+
+  <Image
+    row="2"
+    margin="0"
+    stretch="aspectFill"
+    [src]="item.photo"
+  ></Image>
+
+  <GridLayout
+    row="3"
+    rows="*"
+    columns="auto, auto, auto, auto, *"
+    backgroundColor="#A68A73"
+  >
+    <!-- <Label
+      col="0"
+      margin="0"
+      fontSize="14"
+      iconRes="res://ic_9"
+    ></Label> -->
+
+    <Image col="0" src="res://ic_9"></Image>
+
+    <Label
+      col="1"
+      margin="0"
+      class="text-reaction"
+      fontSize="14"
+      [text]="item.reactions"
+    ></Label>
+
+    <Image col="2" src="res://ic_10" ></Image>
+
+    <Label
+      col="3"
+      margin="0"
+      class="text-comment"
+      fontSize="14"
+      [text]="item.comments"
+    ></Label>
+  </GridLayout>
 </GridLayout>
+</StackLayout>

@@ -7,6 +7,7 @@ import { DataService, DataItem } from '../../shared/data.service'
 @Component({
   selector: 'ItemDetail',
   templateUrl: './item-detail.component.html',
+  styleUrls: ['./item-detail.component.css']
 })
 export class ItemDetailComponent implements OnInit {
   item: DataItem
