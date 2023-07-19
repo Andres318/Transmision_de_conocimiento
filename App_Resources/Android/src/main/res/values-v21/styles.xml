@@ -8,9 +8,15 @@
 
         <item name="android:datePickerStyle">@style/SpinnerDatePicker</item>
         <item name="android:timePickerStyle">@style/SpinnerTimePicker</item>
+        <item name="colorAccent">@color/ns_accent</item>
+        <item name="tabIndicatorColor">@color/tabIndicatorColor</item>
+        <item name="tabSelectedTextColor">@color/tabSelectedTextColor</item>
     </style>
 
     <style name="AppTheme" parent="AppThemeBase21">
+        <item name="colorAccent">@color/ns_accent</item>
+        <item name="tabIndicatorColor">@color/tabIndicatorColor</item>
+        <item name="tabSelectedTextColor">@color/tabSelectedTextColor</item>
     </style>
 
     <!-- Default style for DatePicker - in spinner mode -->
@@ -31,4 +37,23 @@
         <!-- Add padding to the ActionBar - useful when android:windowTranslucentStatus is set to true -->
         <!-- <item name="android:paddingTop">24dp</item> -->
     </style>
+
+    <!-- <style name="CustomTabStyle" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/tabIndicatorColor</item>
+        <item name="tabSelectedTextColor">@color/tabSelectedTextColor</item>
+    </style> -->
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+    <item name="tabIndicatorColor">@color/tabIndicatorColor</item>
+    <item name="tabBackground">@color/tabIndicatorColor</item>
+    <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+    <item name="tabSelectedTextColor">@color/tabIndicatorColor</item>
+</style>
+
+<!-- for text -->
+<style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+
+    <item name="android:textColor">@color/tabIndicatorColor</item>
+    <item name="textAllCaps">false</item>
+</style>
 </resources>

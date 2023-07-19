@@ -1,8 +1,79 @@
-<ActionBar>
-  <Label text="Browse"></Label>
-</ActionBar>
+<ActionBar class="ActionBar">
+  <GridLayout columns="*, *" height="100%">
+    <GridLayout col="0" (tap)="buttonTap()" class="buttonSelected">
+      <Button col="0" id="menuBtn1" text="Municipios"  horizontalAlignment="center"  class="buttonSelected"></Button>
+    </GridLayout>
+    <GridLayout col="1" (tap)="buttonTapOne()" class="buttonSelected">
+      <Button col="1" id="menuBtn2" text="Categorias" horizontalAlignment="center"   class="buttonSelected"></Button>
+    </GridLayout>
+  </GridLayout>
+</ActionBar> 
 
-<GridLayout class="page__content">
-  <Label class="page__content-icon far" text="&#xf1ea;"></Label>
-  <Label class="page__content-placeholder" text="<!-- Page content goes here -->"></Label>
+<!-- <ActionBar class="action-bar" >
+  <GridLayout columns="*, *" horizontalAlignment="left" backgroundColor="#CA5116" >
+    <GridLayout col="0" (tap)="buttonTap()">
+      <Button col="0" id="menuBtn1" text="getMenu"  horizontalAlignment="center" ></Button>
+    </GridLayout>
+    <GridLayout col="1" (tap)="buttonTapOne()">
+      <Button col="1" id="menuBtn2" text="getText" horizontalAlignment="center"  ></Button>
+    </GridLayout>
+  </GridLayout>
+</ActionBar>  -->
+
+<!-- <ActionBar>
+  <StackLayout class="action-bar-container">
+    <Button col="0" id="menuBtn1" text="getMenu"  class="action-bar-button" (tap)="buttonTap()"></Button>
+    <Button col="1" id="menuBtn2" text="getText"  class="action-bar-button" (tap)="buttonTap()"></Button>
+  </StackLayout>
+</ActionBar> -->
+
+
+ 
+
+<!-- <GridLayout columns="50, auto, *" rows="50, auto, *" width="210" height="210" backgroundColor="lightgray" >
+  <Label class="button-custom" text="Label 1" row="0" col="0" backgroundColor="red"></Label>
+  <Label text="Label 2" row="0" col="1" colSpan="2" backgroundColor="green"></Label>
+  <Label text="Label 3" row="1" col="0" rowSpan="2" backgroundColor="blue"></Label>
+  <Label text="Label 4" row="1" col="1" backgroundColor="yellow"></Label>
+  <Label text="Label 5" row="1" col="2" backgroundColor="orange"></Label>
+  <Label text="Label 6" row="2" col="1" backgroundColor="pink"></Label>
+  <Label text="Label 7" row="2" col="2" backgroundColor="purple"></Label>
+</GridLayout> -->
+
+<!-- <TabView androidTabsPosition="top" class="tabView" tabsBackgroundColor="red" selectedColor="#FF0000">
+  <StackLayout *tabItem="{ title: '', iconSource: 'res://ic_group_3'}">
+    <page-router-outlet name="homeTab"></page-router-outlet>
+  </StackLayout>
+
+<GridLayout *tabItem="{ title: '', iconSource: 'res://ic_frame_2'}">
+  <page-router-outlet name="browseTab"></page-router-outlet>
 </GridLayout>
+
+<GridLayout *tabItem="{ title: '', iconSource: 'res://ic_group_69_1'}">
+  <page-router-outlet name="searchTab"></page-router-outlet>
+</GridLayout>
+</TabView> -->
+
+<!-- <ListPicker [items]="" [(ngModel)]=""></ListPicker> -->
+
+
+
+
+
+<!-- <GridLayout class="DatePicker">
+  <Button text="Tap me!" (tap)="buttonTap()"></Button>
+</GridLayout> -->
+
+<!-- <GridLayout class="DatePicker">
+  <DatePicker [day]="" [month]="" [year]=""></DatePicker>
+</GridLayout> -->
+
+<!-- <GridLayout class="TimePicker">
+  <TimePicker [hour]="" [minute]=""></TimePicker>
+</GridLayout> -->
+
+
+<!-- <GridLayout class="page__content" text="Browse Component">
+  <Label class="page__content-icon far" text="&#xf1ea;"></Label>
+  <Label class="page__content-placeholder" text="Page content goes here jeje"></Label>
+</GridLayout> -->

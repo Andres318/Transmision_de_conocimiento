@@ -5,11 +5,13 @@ import { DataService, DataItem } from '../shared/data.service'
 @Component({
   selector: 'Home',
   templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
   items: Array<DataItem>
+  //= [{ id: 1, name: "nombre", description: "descripcion" }, { id: 2, name: "nombre", description: "descripcion" }];
 
-  constructor(private _itemService: DataService) {}
+  constructor(private _itemService: DataService) { }
 
   ngOnInit(): void {
     this.items = this._itemService.getItems()

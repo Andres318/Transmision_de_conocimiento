@@ -1,12 +1,74 @@
-<ActionBar>
-  <Label text="Home"></Label>
+<ActionBar class="ActionBar">
+  <Label text="Home" class="ActionBarText"></Label>
 </ActionBar>
 
 <GridLayout>
   <ListView [items]="items">
     <ng-template let-item="item">
       <StackLayout [nsRouterLink]="['../item', item.id]">
-        <Label [text]="item.name"></Label>
+        <GridLayout
+          height="350"
+          rows="*, auto, auto"
+          columns="*"
+          class="bg-secondary" 
+          borderRadius="10"
+          margin="5 10"
+          padding="0"
+        >
+          <Label
+            row="0"
+            margin="0"
+            fontWeight="700"
+            class="text-primary"
+            fontSize="18"
+            color="rgb(202, 81, 22)"
+            [text]="item.name"
+          ></Label>
+
+          <Label
+            row="1"
+            margin="0 10 10 10"
+            class="text-secondary"
+            fontSize="14"
+            textWrap="true"
+            [text]="item.description"
+          ></Label>
+
+          <Image
+            row="2"
+            margin="0"
+            stretch="aspectFill"
+            [src]="item.photo"
+          ></Image>
+
+        </GridLayout>
+
+        <!-- <StackLayout [nsRouterLink]="['../item', item.id]">
+        <Label [text]="item.name"></Label> -->
+        <!-- <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{item.name}} hola</mat-card-title>
+            <mat-card-subtitle>{{item.name}}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+            alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>
+              The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+              A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+              bred for hunting. <StackLayout orientation="horizontal">
+
+              </StackLayout>
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card> -->
+
+        <!-- </StackLayout> -->
       </StackLayout>
     </ng-template>
   </ListView>
