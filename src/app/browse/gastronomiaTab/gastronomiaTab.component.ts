@@ -1,21 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
-import { GastronomiaTab } from './shared/gastronomiaTab.model';
-import { GastronomiaTabService } from './shared/gastronomiaTab.service';
+import { GastronomiaTab } from "./shared/gastronomiaTab.model";
 
 @Component({
-	selector: 'gastronomiaTab',
-	templateUrl: 'gastronomiaTab.component.html'
+  selector: "gastronomiaTab",
+  templateUrl: "gastronomiaTab.component.html",
 })
-
 export class GastronomiaTabComponent implements OnInit {
-	gastronomiaTab: GastronomiaTab[] = [];
+  gastronomiaTab: GastronomiaTab[] = [];
 
-	constructor(private gastronomiaTabService: GastronomiaTabService) { }
+  constructor() {}
 
-	ngOnInit() {
-		this.gastronomiaTabService.getList().subscribe((res) => {
-			this.gastronomiaTab = res;
-		});
-	}
+  ngOnInit() {}
 }
