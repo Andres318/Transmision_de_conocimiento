@@ -1,13 +1,28 @@
 <ActionBar class="ActionBar">
   <GridLayout columns="*, *" height="100%">
-    <GridLayout col="0" (tap)="buttonTap()" class="buttonSelected">
-      <Button col="0" id="menuBtn1" text="Municipios"  horizontalAlignment="center"  class="buttonSelected"></Button>
+    <GridLayout (tap)="buttonTapMun()" col="0" class="buttonSelected">
+      <Button
+        col="0"
+        id="menuBtn1"
+        text="Municipios"
+        horizontalAlignment="center"
+        class="buttonSelected"
+      ></Button>
     </GridLayout>
-    <GridLayout col="1" (tap)="buttonTapOne()" class="buttonSelected">
-      <Button col="1" id="menuBtn2" text="Categorias" horizontalAlignment="center"   class="buttonSelected"></Button>
+    <GridLayout (tap)="buttonTapCat()"  col="1"  class="buttonSelected">
+      <Button
+        col="1"
+        id="menuBtn2"
+        text="Categorias"
+        horizontalAlignment="center"
+        class="buttonSelected"
+      ></Button>
     </GridLayout>
   </GridLayout>
-</ActionBar> 
+</ActionBar>
+<router-outlet></router-outlet>
+
+<!-- (tap)="buttonTapCat()" -->
 
 <!-- <ActionBar class="action-bar" >
   <GridLayout columns="*, *" horizontalAlignment="left" backgroundColor="#CA5116" >
@@ -26,9 +41,6 @@
     <Button col="1" id="menuBtn2" text="getText"  class="action-bar-button" (tap)="buttonTap()"></Button>
   </StackLayout>
 </ActionBar> -->
-
-
- 
 
 <!-- <GridLayout columns="50, auto, *" rows="50, auto, *" width="210" height="210" backgroundColor="lightgray" >
   <Label class="button-custom" text="Label 1" row="0" col="0" backgroundColor="red"></Label>
@@ -56,10 +68,6 @@
 
 <!-- <ListPicker [items]="" [(ngModel)]=""></ListPicker> -->
 
-
-
-
-
 <!-- <GridLayout class="DatePicker">
   <Button text="Tap me!" (tap)="buttonTap()"></Button>
 </GridLayout> -->
@@ -71,7 +79,6 @@
 <!-- <GridLayout class="TimePicker">
   <TimePicker [hour]="" [minute]=""></TimePicker>
 </GridLayout> -->
-
 
 <!-- <GridLayout class="page__content" text="Browse Component">
   <Label class="page__content-icon far" text="&#xf1ea;"></Label>

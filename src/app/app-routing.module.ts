@@ -8,7 +8,6 @@ const routes: Routes = [
     redirectTo: '/(homeTab:home/default//browseTab:browse/default//searchTab:search/default)',
     pathMatch: 'full',
   },
-
   {
     path: 'home',
     component: NSEmptyOutletComponent,

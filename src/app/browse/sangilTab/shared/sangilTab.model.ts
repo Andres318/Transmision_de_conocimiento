@@ -1,4 +1,4 @@
-export class CaliTab {
+export class SangilTab {
 	id: number;
 	name: string;
 }
