@@ -1,27 +1,46 @@
-<!-- <ActionBar>
-  <NavigationButton (tap)="onBackTap()" icon="res://ic_37"></NavigationButton>
-  <Label text="Nueva Publicacion"></Label>
-  <ActionItem (tap)="onNextTap()" text="Siguiente" android.position="popup"></ActionItem>
-</ActionBar> -->
+<ActionBar>
+  <Label text="Andres Valenzuela"></Label>
+</ActionBar>
+<StackLayout>
+  <GridLayout
+    height="auto"
+    rows="auto, auto, auto, auto, auto"
+    columns="*"
+    class="bg-secondary"
+    borderRadius="10"
+    margin="5 10"
+    padding="0"
+  >
+    <Image
+      row="2"
+      margin="0"
+      stretch="aspectFill"
+      src="https://www.lifeder.com/wp-content/uploads/2020/01/colombia-mujer-Cartagena-1024x683.jpg"
+    ></Image>
 
-<GridLayout class="page__content">
-  <Label class="page__content-icon fas" text="&#xf002;"></Label>
-  <Label class="page__content-placeholder" text=" Search page content goes here "></Label>
-</GridLayout>
+    <GridLayout
+      row="3"
+      rows="*"
+      columns="auto, auto, auto, auto, *"
+      backgroundColor="#A68A73"
+    >
+      <Image col="0" src="res://ic_9"></Image>
 
-<!-- <GridLayout rows="*, *, *, *" columns="*, *, *" height="auto">
-  <Image row="0" col="0" class="grid-image"  src="https://www.mincultura.gov.co/eventos/PublishingImages/pieza%201%20labio%20de%20liebre%20600x600%20-2.jpg"></Image>
-  <Image row="0" col="1" class="grid-image"  src="https://www.kienyke.com/sites/default/files/2022-08/Colombia.jpg"></Image>
-  <Image row="0" col="2" class="grid-image"  src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/34KJFVYXAZA2JON7X66TD5P6VY.jpg"></Image>
-  <Image row="1" col="0" class="grid-image" src="https://www.bloomberglinea.com/resizer/ZZaYML3Ev60ktbvtURmoU-VcNpw=/1440x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/bloomberglinea/QMA63E5VYRE73GKYMOGAX5UBXU.jpg"></Image>
-  <Image row="1" col="1" class="grid-image" src="https://www.eje21.com.co/site/wp-content/uploads/2021/10/arte-rupestre-del-guaviare.-imagen-periodico-unal..jpg"></Image>
-  <Image row="1" col="2" class="grid-image" src="https://www.elheraldo.co/sites/default/files/articulo/2023/01/22/whatsapp_image_2023-01-19_at_4.27.55_pm.jpeg"></Image>
-  <Image row="2" col="0" class="grid-image" src="https://boyaca7dias.com.co/wp-content/uploads/2021/09/esmeraldas.jpg"></Image>
-  <Image row="2" col="1" class="grid-image" src="https://assets.unileversolutions.com/recipes-v2/232218.jpg"></Image>
-  <Image row="2" col="2" class="grid-image" src="https://aldianews.com/sites/default/files/2022-05/foto%20grande%20AL%20DIA_9.png"></Image>
-  <Image row="3" col="0" class="grid-image" src="https://periodicoeldiario.com/wp-content/uploads/2017/05/Boyac%C3%A1-es-para-vivirla1.jpg"></Image>
-  <Image row="3" col="1" class="grid-image" src="https://blog.redbus.co/wp-content/uploads/2019/09/Cueva-de-los-aviones..jpg"></Image>
-  <Image row="3" col="2" class="grid-image" src="https://territorioexplora.com.co/wp-content/uploads/2020/04/Desierto-de-la-Tatacoa_Zona-Gris.jpg"></Image>
+      <Label col="1" margin="0" class="text-reaction" fontSize="14"></Label>
 
+      <Image col="2" src="res://ic_10"></Image>
 
-</GridLayout> -->
+      <Label col="3" margin="0" class="text-comment" fontSize="14"></Label>
+    </GridLayout>
+  </GridLayout>
+
+  <TabView androidTabsPosition="top" class="tabView" class="ActionBar">
+    <GridLayout (tap)="buttonPub()" *tabItem="{ title: 'Publicaciones', iconSource: 'res://ic_28' }">
+      <page-router-outlet></page-router-outlet>
+    </GridLayout>
+
+    <GridLayout *tabItem="{ title: 'Eventos', iconSource: 'res://ic_29' }">
+      <page-router-outlet></page-router-outlet>
+    </GridLayout>
+  </TabView>
+</StackLayout>

@@ -1,12 +1,9 @@
-.grid-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .buttonNext{
-    background-color: #CA5116;
-    color: white;
-    align-content: end;
-    width: 500px;
+.ActionBar{
+    font-size: large;
+}
+.buttonSelected{
+    background-color: whitesmoke;
+    color: #CA5116;
+    font-size: 15px;
+    align-content: center;
   }

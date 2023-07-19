@@ -1,26 +1,20 @@
 import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute, NavigationEnd, Router } from '@angular/router'
-import { RouterExtensions } from '@nativescript/angular'
+import { Router } from "@angular/router";
+import { Page } from "@nativescript/core";
+import { Menu } from "nativescript-menu";
 
 @Component({
   selector: "Search",
   templateUrl: "./search.component.html",
   styleUrls: ["./search.component.css"],
 })
-export class SearchComponent implements OnInit {
-  constructor(
-    private _route: ActivatedRoute,
-    private _routerExtensions: RouterExtensions,
-    private router: Router
-  ) {}
+export class SearchComponent {
+  constructor(public page: Page, private router: Router) {}
 
-  ngOnInit(): void {
-    const id = +this._route.snapshot.params.id
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-          console.log("Ruta redirigida:", event.urlAfterRedirects);
-      }
-  });
+  buttonPub() {
+    this.router.navigateByUrl(
+      "/(homeTab:home/default//browseTab:browse/default//searchTab:search/default/publicacionesTab)"
+    );
   }
 
   onBackTap(): void {
