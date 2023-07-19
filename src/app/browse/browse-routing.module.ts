@@ -11,6 +11,7 @@ import { ArtesaniaTabComponent } from "./artesaniaTab/artesaniaTab.component";
 import { TurismoTabComponent } from "./turismoTab/turismoTab.component";
 import { GastronomiaTabComponent } from "./gastronomiaTab/gastronomiaTab.component";
 import { ArqueologiaTabComponent } from "./arqueologiaTab/arqueologiaTab.component";
+import { ItemDetailComponent } from "../home/item-detail/item-detail.component";
 
 const routes: Routes = [
   {
@@ -22,37 +23,38 @@ const routes: Routes = [
         path: "bucaramangaTab",
         component: BucaramangaTabComponent,
       },
-      { 
+      {
         path: "socorroTab",
-        component: SocorroTabComponent 
+        component: SocorroTabComponent,
       },
       {
         path: "velezTab",
         component: VelezTabComponent,
       },
-      { 
+      {
         path: "sangilTab",
-        component: SangilTabComponent 
+        component: SangilTabComponent,
       },
       //Categorias
       {
         path: "artesaniaTab",
         component: ArtesaniaTabComponent,
       },
-      { 
+      {
         path: "turismoTab",
-        component: TurismoTabComponent 
+        component: TurismoTabComponent,
       },
       {
         path: "gastronomiaTab",
         component: GastronomiaTabComponent,
       },
-      { 
+      {
         path: "arqueologiaTab",
-        component: ArqueologiaTabComponent 
+        component: ArqueologiaTabComponent,
       },
     ],
   },
+  { path: "item/:id", component: ItemDetailComponent },
 ];
 
 @NgModule({

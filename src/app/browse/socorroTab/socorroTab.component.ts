@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 import { Router } from "@angular/router";
 import { Observable } from "@nativescript/core";
 import { Menu } from "nativescript-menu";
-import { Page } from "tns-core-modules";
+import { Page } from '@nativescript/core';
 
 @Component({
   selector: "socorroTab",
@@ -21,9 +21,9 @@ export class SocorroTabComponent extends Observable {
     })
       .then((action) => {
         this.router.navigateByUrl(
-          "/(homeTab:home/item/" +
+          "/(homeTab:home/default//browseTab:browse/item/" +
             action.id +
-            "//browseTab:browse/default//searchTab:search/default)"
+            "//searchTab:search/default)"
         );
       })
       .catch(console.log);
@@ -35,9 +35,9 @@ export class SocorroTabComponent extends Observable {
     })
       .then((action) => {
         this.router.navigateByUrl(
-          "/(homeTab:home/item/" +
+          "/(homeTab:home/default//browseTab:browse/item/" +
             action.id +
-            "//browseTab:browse/default//searchTab:search/default)"
+            "//searchTab:search/default)"
         );
       })
       .catch(console.log);
@@ -49,9 +49,9 @@ export class SocorroTabComponent extends Observable {
     })
       .then((action) => {
         this.router.navigateByUrl(
-          "/(homeTab:home/item/" +
+          "/(homeTab:home/default//browseTab:browse/item/" +
             action.id +
-            "//browseTab:browse/default//searchTab:search/default)"
+            "//searchTab:search/default)"
         );
       })
       .catch(console.log);
@@ -63,9 +63,9 @@ export class SocorroTabComponent extends Observable {
     })
       .then((action) => {
         this.router.navigateByUrl(
-          "/(homeTab:home/item/" +
+          "/(homeTab:home/default//browseTab:browse/item/" +
             action.id +
-            "//browseTab:browse/default//searchTab:search/default)"
+            "//searchTab:search/default)"
         );
       })
       .catch(console.log);
