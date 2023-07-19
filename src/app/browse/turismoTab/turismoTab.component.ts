@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 import { TurismoTab } from './shared/turismoTab.model';
-import { TurismoTabService } from './shared/turismoTab.service';
 
 @Component({
 	selector: 'turismoTab',
@@ -12,12 +11,10 @@ import { TurismoTabService } from './shared/turismoTab.service';
 export class TurismoTabComponent implements OnInit {
 	turismoTab: TurismoTab[] = [];
 
-	constructor(private turismoTabService: TurismoTabService) { }
+	constructor() { }
 
 	ngOnInit() {
-		this.turismoTabService.getList().subscribe((res) => {
-			this.turismoTab = res;
-		});
+		
 	}
 }
 

@@ -1,21 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
-import { ArtesaniaTab } from './shared/artesaniaTab.model';
-import { ArtesaniaTabService } from './shared/artesaniaTab.service';
+import { ArtesaniaTab } from "./shared/artesaniaTab.model";
 
 @Component({
-	selector: 'artesaniaTab',
-	templateUrl: 'artesaniaTab.component.html',
+  selector: "artesaniaTab",
+  templateUrl: "artesaniaTab.component.html",
 })
-
 export class ArtesaniaTabComponent implements OnInit {
-	artesaniaTab: ArtesaniaTab[] = [];
+  artesaniaTab: ArtesaniaTab[] = [];
 
-	constructor(private artesaniaTabService: ArtesaniaTabService) { }
+  constructor() {}
 
-	ngOnInit() {
-		this.artesaniaTabService.getList().subscribe((res) => {
-			this.artesaniaTab = res;
-		});
-	}
+  ngOnInit() {}
 }

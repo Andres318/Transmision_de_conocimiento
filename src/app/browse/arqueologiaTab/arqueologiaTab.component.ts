@@ -1,21 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
-import { ArqueologiaTab } from './shared/arqueologiaTab.model';
-import { ArqueologiaTabService } from './shared/arqueologiaTab.service';
+import { ArqueologiaTab } from "./shared/arqueologiaTab.model";
 
 @Component({
-	selector: 'arqueologiaTab',
-	templateUrl: 'arqueologiaTab.component.html',
+  selector: "arqueologiaTab",
+  templateUrl: "arqueologiaTab.component.html",
 })
-
 export class ArqueologiaTabComponent implements OnInit {
-	arqueologiaTab: ArqueologiaTab[] = [];
+  arqueologiaTab: ArqueologiaTab[] = [];
 
-	constructor(private arqueologiaTabService: ArqueologiaTabService) { }
+  constructor() {}
 
-	ngOnInit() {
-		this.arqueologiaTabService.getList().subscribe((res) => {
-			this.arqueologiaTab = res;
-		});
-	}
+  ngOnInit() {}
 }
