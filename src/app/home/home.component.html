@@ -5,7 +5,8 @@
 <GridLayout>
   <ListView [items]="items">
     <ng-template let-item="item">
-      <StackLayout [nsRouterLink]="['../item', item.id]">
+      <!-- <StackLayout [nsRouterLink]="['../item', item.id]"> -->
+        <StackLayout>
         <GridLayout
           height="auto"
           rows="auto, auto, auto, auto, auto"
