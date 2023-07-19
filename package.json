@@ -16,10 +16,13 @@
     "@nativescript/angular": "^15.0.0",
     "@nativescript/core": "~8.5.0",
     "@nativescript/theme": "~3.0.2",
+    "@nstudio/nativescript-floatingactionbutton": "^3.0.4",
     "nativescript-angular-cli": "^0.1.9",
+    "nativescript-floatingactionbutton": "^5.1.0",
     "nativescript-menu": "^1.1.7",
     "nativescript-popup": "^1.5.0",
     "rxjs": "~7.6.0",
+    "tns-core-modules": "^6.5.27",
     "zone.js": "~0.13.0"
   },
   "devDependencies": {

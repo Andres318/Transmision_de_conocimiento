@@ -10,8 +10,6 @@ import { Menu } from "nativescript-menu";
 })
 export class HomeComponent extends Observable implements OnInit  {
   items: Array<DataItem>
-  //= [{ id: 1, name: "nombre", description: "descripcion" }, { id: 2, name: "nombre", description: "descripcion" }];
-
   constructor(private _itemService: DataService, public page: Page) {
     super();
    }

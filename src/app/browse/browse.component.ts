@@ -8,13 +8,8 @@ import { Menu } from "nativescript-menu";
   templateUrl: "./browse.component.html",
   styleUrls: ["./browse.component.css"],
 })
-
-export class BrowseComponent extends Observable {
-  public message: string;
-
-  constructor(public page: Page, private router: Router) {
-    super();
-  }
+export class BrowseComponent {
+  constructor(public page: Page, private router: Router) {}
 
   buttonTapMun() {
     Menu.popup({
@@ -40,10 +35,10 @@ export class BrowseComponent extends Observable {
     Menu.popup({
       view: this.page.getViewById("menuBtn2"),
       actions: [
-        { id: "one", title: "Artesania" },
-        { id: "two", title: "Turismo" },
-        { id: "three", title: "Gastronomia" },
-        { id: "four", title: "Arqueologia" },
+        { id: "artesaniaTab", title: "Artesania" },
+        { id: "turismoTab", title: "Turismo" },
+        { id: "gastronomiaTab", title: "Gastronomia" },
+        { id: "arqueologiaTab", title: "Arqueologia" },
       ],
     })
       .then((action) => {

@@ -1,10 +1,31 @@
-<div class="bucaramangaTab"> Hello BucaramangaTabComponent! </div>
-
-
-<GridLayout columns="50, auto, *" rows="50, auto, *" width="210" height="210" backgroundColor="lightgray" >
-  <Label class="button-custom" text="Label 1" row="0" col="0" backgroundColor="red"></Label>
-  <Label text="bucaramangaTab 2" row="0" col="1" colSpan="2" backgroundColor="green"></Label>
-  <Label text="bucaramangaTab 3" row="1" col="0" rowSpan="2" backgroundColor="blue"></Label>
-  <Label text="bucaramangaTab 4" row="1" col="1" backgroundColor="yellow"></Label>
-  <Label text="bucaramangaTab 5" row="1" col="2" backgroundColor="orange"></Label>
-</GridLayout>
+<StackLayout padding="70">
+  <Button
+    id="addButton1"
+    class="float-button button1"
+    (tap)="ButtonClick1()"
+    horizontalAlignment="right"
+    backgroundImage="res://ic_5"
+  >
+  </Button>
+  <Button
+    id="addButton2"
+    class="float-button button2"
+    (tap)="ButtonClick2()"
+    horizontalAlignment="left"
+    backgroundImage="res://ic_5"
+  ></Button>
+  <Button
+    id="addButton3"
+    class="float-button button3"
+    (tap)="ButtonClick3()"
+    horizontalAlignment="right"
+    backgroundImage="res://ic_5"
+  ></Button>
+  <Button
+    id="addButton4"
+    class="float-button button4"
+    (tap)="ButtonClick4()"
+    horizontalAlignment="center"
+    backgroundImage="res://ic_5"
+  ></Button>
+</StackLayout>
