@@ -7,6 +7,10 @@ import { BucaramangaTabComponent } from "./bucaramangaTab/bucaramangaTab.compone
 import { SocorroTabComponent } from "./socorroTab/socorroTab.component";
 import { SangilTabComponent } from "./sangilTab/sangilTab.component";
 import { VelezTabComponent } from "./velezTab/velezTab.component";
+import { ArtesaniaTabComponent } from "./artesaniaTab/artesaniaTab.component";
+import { TurismoTabComponent } from "./turismoTab/turismoTab.component";
+import { GastronomiaTabComponent } from "./gastronomiaTab/gastronomiaTab.component";
+import { ArqueologiaTabComponent } from "./arqueologiaTab/arqueologiaTab.component";
 
 const routes: Routes = [
   {
@@ -31,22 +35,22 @@ const routes: Routes = [
         component: SangilTabComponent 
       },
       //Categorias
-      // {
-      //   path: "bucaramangaTab",
-      //   component: BucaramangaTabComponent,
-      // },
-      // { 
-      //   path: "socorroTab",
-      //   component: SocorroTabComponent 
-      // },
-      // {
-      //   path: "velezTab",
-      //   component: VelezTabComponent,
-      // },
-      // { 
-      //   path: "sangilTab",
-      //   component: SangilTabComponent 
-      // },
+      {
+        path: "artesaniaTab",
+        component: ArtesaniaTabComponent,
+      },
+      { 
+        path: "turismoTab",
+        component: TurismoTabComponent 
+      },
+      {
+        path: "gastronomiaTab",
+        component: GastronomiaTabComponent,
+      },
+      { 
+        path: "arqueologiaTab",
+        component: ArqueologiaTabComponent 
+      },
     ],
   },
 ];

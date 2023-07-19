@@ -1,38 +1,31 @@
 <StackLayout padding="70">
-  <DockLayout
-    class="fab-container"
-    (tap)="onFabTap()"
-    horizontalAlignment="left"
-  >
-    <Label
-      class="fab-icon"
-      text="+"
-      iconSource="res://ic_frame_2"
-      color="white"
-    ></Label>
-  </DockLayout>
-  <DockLayout
-    class="fab-container"
-    (tap)="onFabTap()"
-    horizontalAlignment="center"
-  >
-    <Label
-      class="fab-icon"
-      text="+"
-      iconSource="res://ic_frame_2"
-      color="white"
-    ></Label>
-  </DockLayout>
-  <DockLayout
-    class="fab-container"
-    (tap)="onFabTap()"
+  <Button
+    id="addButton1"
+    class="float-button button1"
+    (tap)="ButtonClick1()"
     horizontalAlignment="right"
+    backgroundImage="res://ic_5"
   >
-    <Label
-      class="fab-icon"
-      text="+"
-      iconSource="res://ic_frame_2"
-      color="white"
-    ></Label>
-  </DockLayout>
+  </Button>
+  <Button
+    id="addButton2"
+    class="float-button button2"
+    (tap)="ButtonClick2()"
+    horizontalAlignment="left"
+    backgroundImage="res://ic_5"
+  ></Button>
+  <Button
+    id="addButton3"
+    class="float-button button3"
+    (tap)="ButtonClick3()"
+    horizontalAlignment="right"
+    backgroundImage="res://ic_5"
+  ></Button>
+  <Button
+    id="addButton4"
+    class="float-button button4"
+    (tap)="ButtonClick4()"
+    horizontalAlignment="center"
+    backgroundImage="res://ic_5"
+  ></Button>
 </StackLayout>

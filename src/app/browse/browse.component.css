@@ -26,6 +26,9 @@
   text-align: center;
 }
 .mainArea{
-  background-size:cover;
-  background-color: gray;
+  background-size:cover ;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 2%;
 }

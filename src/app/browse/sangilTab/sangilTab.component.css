@@ -1,3 +1,21 @@
-.sangilTab {
-
+.float-button {
+  position: absolute;
+  width: 56;
+  height: 56;
+  border-radius: 28;
+  font-size: 34;
+  text-align: center;
+  vertical-align: bottom;
+  background-color: transparent;
+  background-size: cover;
+}
+.button1{
+}
+.button2{
+}
+.button3{
+  margin-top: 300px;
+}
+.button4{
+  margin-top: 200px;
 }

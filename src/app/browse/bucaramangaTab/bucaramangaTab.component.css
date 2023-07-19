@@ -1,17 +1,21 @@
-.fab-container {
-    position: absolute;
-    bottom: 50; /* Ajusta la posición vertical según tus necesidades */
-    right: 80; /* Ajusta la posición horizontal según tus necesidades */
-    width: 56;
-    height: 56;
-    border-radius: 28;
-    background-color: #ff4081; /* Color de fondo del botón */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto de elevación */
+.float-button {
+  position: absolute;
+  width: 56;
+  height: 56;
+  border-radius: 28;
+  font-size: 34;
+  text-align: center;
+  vertical-align: bottom;
+  background-color: transparent;
+  background-size: cover;
 }
-
-.fab-icon {
-    font-size: 24;
-    vertical-align: center !important;
-    text-align: center !important;
-    line-height: 56px; /* Centra verticalmente el ícono */
+.button1{
+}
+.button2{
+}
+.button3{
+  margin-top: 300px;
+}
+.button4{
+  margin-top: 200px;
 }
