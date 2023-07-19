@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
 import { NuevaPublicacionStepper } from "./shared/nuevaPublicacionStepper.model";
+import { RouterExtensions } from "@nativescript/angular";
 
 @Component({
   selector: "nuevaPublicacionStepper",
@@ -9,15 +10,13 @@ import { NuevaPublicacionStepper } from "./shared/nuevaPublicacionStepper.model"
 export class NuevaPublicacionStepperComponent implements OnInit {
   nuevaPublicacionStepper: NuevaPublicacionStepper[] = [];
 
-  onBackTap(): void {
-    console.log("back")
-  }
-
-  onNextTap(){
-    console.log("next")
-  }
-
-  constructor() {}
+  constructor(private _routerExtensions: RouterExtensions) {}
 
   ngOnInit() {}
+  onBackTap(): void {
+    this._routerExtensions.back();
+  }
+  onNextTap() {
+    console.log("next");
+  }
 }
