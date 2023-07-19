@@ -1,0 +1,9 @@
+.ActionBar{
+    font-size: large;
+}
+.buttonSelected{
+    background-color: whitesmoke;
+    color: #CA5116;
+    font-size: 15px;
+    align-content: center;
+  }

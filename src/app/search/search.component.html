@@ -1,8 +1,46 @@
 <ActionBar>
-  <Label text="Search"></Label>
+  <Label text="Andres Valenzuela"></Label>
 </ActionBar>
+<StackLayout>
+  <GridLayout
+    height="auto"
+    rows="auto, auto, auto, auto, auto"
+    columns="*"
+    class="bg-secondary"
+    borderRadius="10"
+    margin="5 10"
+    padding="0"
+  >
+    <Image
+      row="2"
+      margin="0"
+      stretch="aspectFill"
+      src="https://www.lifeder.com/wp-content/uploads/2020/01/colombia-mujer-Cartagena-1024x683.jpg"
+    ></Image>
 
-<GridLayout class="page__content">
-  <Label class="page__content-icon fas" text="&#xf002;"></Label>
-  <Label class="page__content-placeholder" text="<!-- Search page content goes here -->"></Label>
-</GridLayout>
+    <GridLayout
+      row="3"
+      rows="*"
+      columns="auto, auto, auto, auto, *"
+      backgroundColor="#A68A73"
+    >
+      <Image col="0" src="res://ic_9"></Image>
+
+      <Label col="1" margin="0" class="text-reaction" fontSize="14"></Label>
+
+      <Image col="2" src="res://ic_10"></Image>
+
+      <Label col="3" margin="0" class="text-comment" fontSize="14"></Label>
+    </GridLayout>
+  </GridLayout>
+
+  <TabView androidTabsPosition="top" class="tabView" class="ActionBar">
+    <GridLayout (tap)="buttonPub()" *tabItem="{ title: 'Publicaciones', iconSource: 'res://ic_28' }">
+      <page-router-outlet></page-router-outlet>
+    </GridLayout>
+
+    <GridLayout *tabItem="{ title: 'Eventos', iconSource: 'res://ic_29' }">
+      <page-router-outlet></page-router-outlet>
+    </GridLayout>
+  </TabView>
+</StackLayout>
