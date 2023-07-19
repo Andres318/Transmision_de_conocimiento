@@ -14,7 +14,7 @@ export class BucaramangaTabComponent {
   ButtonClick1() {
     Menu.popup({
       view: this.page.getViewById("addButton1"),
-      actions: [{ id: "bucaramangaTab", title: "Bucaramanga" }],
+      actions: [{ id: "2", title: "Rubi Utima" }],
     })
       .then((action) => {
         this.router.navigateByUrl(
@@ -28,7 +28,7 @@ export class BucaramangaTabComponent {
   ButtonClick2() {
     Menu.popup({
       view: this.page.getViewById("addButton2"),
-      actions: [{ id: "bucaramangaTab", title: "Bucaramanga" }],
+      actions: [{ id: "8", title: "Karen Perez" }],
     })
       .then((action) => {
         this.router.navigateByUrl(
@@ -42,7 +42,7 @@ export class BucaramangaTabComponent {
   ButtonClick3() {
     Menu.popup({
       view: this.page.getViewById("addButton3"),
-      actions: [{ id: "1", title: "Hola" }],
+      actions: [{ id: "4", title: "Angie Sanabria" }],
     })
       .then((action) => {
         this.router.navigateByUrl(
@@ -56,7 +56,7 @@ export class BucaramangaTabComponent {
   ButtonClick4() {
     Menu.popup({
       view: this.page.getViewById("addButton4"),
-      actions: [{ id: "bucaramangaTab", title: "Bucaramanga" }],
+      actions: [{ id: "7", title: "Mario Mendoza" }],
     })
       .then((action) => {
         this.router.navigateByUrl(

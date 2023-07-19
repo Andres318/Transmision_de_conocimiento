@@ -41,7 +41,7 @@ export class DataService {
     },
     {
       id: 4,
-      name: 'Angie Sanabria ',
+      name: 'Angie Sanabria',
       description: 'Es interesante conocer el proceso de un producto tan colombiano como el cafe, sin duda alguna es algo de lo que orgullecernos, agradezco a la señora Aura por su invitacion y atencion.',
       photo:"https://www.bonka.es/themes/custom/bonka/img/recolectora-de-cafe.jpg",
       reactions:"984",
