@@ -8,4 +8,35 @@
     color: white;
     font-size: 15px;
   }
-  
+
+  .reactionBar{
+    background-color: #A68A73;
+  }
+
+  .text-comment {
+    color: white;
+  }
+
+  .text-reaction {
+    color: white;
+  }
+
+  .float-button {
+    position: absolute;
+    width: 56;
+    height: 56;
+    border-radius: 28;
+    background-color: #127475;
+    color: #ffffff;
+    font-size: 34;
+    text-align: center;
+    vertical-align: bottom;
+    horizontal-align: right;
+    margin-bottom: 100px;
+    margin-right: 50px;
+  }
+
+  .addButtonHome{
+    background-color: #127475;
+    color: #ffffff;
+  }
